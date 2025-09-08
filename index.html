@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film/Dizi Arama - 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="gradient-bg">
+        <div class="container">
+            <div class="header-content">
+                <div>
+                    <h1><i class="fas fa-film"></i> FilmDizi 2025</h1>
+                    <p>En yeni filmler ve diziler</p>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Film, dizi veya oyuncu ara...">
+                    <button id="searchButton" title="Ara"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="favoritesButton"><i class="fas fa-star"></i> Favorilerim</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="searchResults">
+            <h2><i class="fas fa-compass"></i> Arama Sonuçları</h2>
+            <div id="moviesContainer" class="movie-grid"></div>
+            <div id="noResults" class="no-results">
+                <i class="fas fa-search"></i>
+                <p>Arama yapmak için yukarıdaki kutucuğu kullanın</p>
+            </div>
+        </section>
+
+        <section id="favoritesSection" class="hidden">
+            <div class="section-header">
+                <h2><i class="fas fa-star"></i> Favorilerim</h2>
+                <button id="backToSearch"><i class="fas fa-arrow-left"></i> Aramaya Dön</button>
+            </div>
+            <div id="favoritesContainer" class="movie-grid"></div>
+            <div id="noFavorites" class="no-results">
+                <i class="fas fa-star"></i>
+                <p>Henüz favori film/dizi eklemediniz</p>
+            </div>
+        </section>
+
+        <div id="movieModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle"></h3>
+                    <button id="closeModal" title="Kapat"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-poster">
+                        <img id="modalPoster" src="" alt="Film Afişi">
+                    </div>
+                    <div class="modal-info">
+                        <div class="modal-tags">
+                            <span id="modalYear"></span>
+                            <span id="modalRated"></span>
+                            <span id="modalRuntime"></span>
+                        </div>
+                        <div class="modal-rating">
+                            <span>IMDb Puanı:</span>
+                            <strong id="modalRating"></strong>
+                            <div class="rating-bar">
+                                <div id="ratingBar"></div>
+                            </div>
+                        </div>
+                        <div><span>Tür:</span> <span id="modalGenre"></span></div>
+                        <div><span>Yönetmen:</span> <span id="modalDirector"></span></div>
+                        <div><span>Oyuncular:</span> <span id="modalActors"></span></div>
+                        <div class="modal-plot">
+                            <span>Konu:</span>
+                            <p id="modalPlot"></p>
+                        </div>
+                        <div class="modal-actions">
+                            <button id="modalAddFavorite"><i class="fas fa-star"></i> Favorilere Ekle</button>
+                            <button id="modalRemoveFavorite" class="hidden"><i class="fas fa-trash"></i> Favorilerden Çıkar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="gradient-bg">
+        <div class="container">
+            <p>© 2025 FilmDizi Arama Sitesi | OMDb API kullanılarak oluşturulmuştur</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
