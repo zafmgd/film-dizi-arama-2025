@@ -23,13 +23,18 @@ OMDb API kullanılarak geliştirilmiş modern film ve dizi arama uygulaması. Ku
 
 ## Kurulum ve Kullanım
 
-📧 İletişim
+## 📧 İletişim
+
 Proje hakkında sorularınız, geri bildirimleriniz veya işbirliği teklifleriniz için benimle iletişime geçebilirsiniz:
 
-E-posta: saractalhayusuf@gmail.com
-LinkedIn: www.linkedin.com/in/yusuf-talha-saraç-752445262
-GITHUB: https://github.com/zafmgd
+-   **E-posta:** saractalhayusuf@gmail.com
+-   **LinkedIn:** www.linkedin.com/in/yusuf-talha-saraç-752445262
+
 
 1. Bu repo’yu klonala:
    ```bash
    git clone https://github.com/zafmgd/film-dizi-arama-2025.git
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/zafmgd">Yusuf Talha Saraç</a>
+</p>
